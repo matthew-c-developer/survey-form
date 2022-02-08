@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="styles.css">
+    <title>Document</title>
+</head>
+<body>
+    <!--title and description-->
+<h1 id="title">quantum mechanics survey form</h1>
+<p id="description">Please complete this short survey so that we can understand your thoughts on quantum mechanics.</p>
+<!--survey form-->
+<form id="survey-form">
+  <!--participant's name-->
+  <label class="main-label" id="name-label" for="name">your name:</label>
+  <input class="full-input" id="name" name="name" type="text" placeholder="enter your name" required>
+  <!--participant's email-->
+  <label class="main-label" id="email-label" for="email">your email:</label>
+  <input class="full-input" id="email" name="email" type="email" placeholder="enter your email" required>
+  <!--participant's years of experience with quantum mechanics-->
+  <label class="main-label" id="number-label" for="age">years of experience with quantum mechanics:</label>
+  <input class="full-input" id="number" name="age" type="number" min="0" max="100" placeholder="years">
+  <!--participant's interperation of quantum mechanics-->
+  <label class="main-label" for="dropdown">What is the nature of the relationship between quantum mechanics and reality?</label>
+  <select class="full-input" id="dropdown" name="interpretation">
+    <option value="">--choose one--</option>
+    <option value="copenhagen">Copenhagen interpretation</option>
+    <option value="many-worlds">many worlds interpretation</option>
+    <option value="other">other interpretation</option>
+  </select>
+  <!--participant's preferred notation-->
+  <p class="main-label">What is the best notation to use in quantum mechanics?</p>
+  <div class="full-input"> 
+    <input type="radio" name="notation" id="bra-ket" value="bra-ket" checked>
+    <label for="bra-ket">bra-ket</label>
+    <input type="radio" name="notation" id="dirac" value="dirac">
+    <label for="dirac">Dirac</label>
+  </div>
+  <!--participant's opinion on important tech-->
+  <p class="main-label">What are the most important technological applications of quantum theory? (check all that apply)</p>
+  <div class="full-input">
+    <input type="checkbox" name="application" id="the-laser" value="the-laser">
+    <label for="the-laser">the laser</label><br>
+    <input type="checkbox" name="application" id="the-silicon-transistor" value="the-silicon-transistor">
+    <label for="the-silicon-transistor">the silicon transistor</label><br>
+    <input type="checkbox" name="application" id="mri" value="mri">
+    <label for="mri">MRI (magnetic resonance imaging)</label><br>
+    <input type="checkbox" name="application" id="electron-microscopy" value="electron-microscopy">
+    <label for="electron-microscopy">electron microscopy</label><br>
+    <input type="checkbox" name="application" id="quantum-computing" value="quantum-computing">
+    <label for="quantum-computing">quantum computing</label><br>
+    <input type="checkbox" name="application" id="super-conductors" value="super-conductors">
+    <label for="super-conductors">super conductors</label>
+  </div>
+  <!--participant's additional thoughts-->
+  <label class="main-label" for="additional-thoughts">Is there anything else you would like us to know about quantum mechanics?</label>
+  <textarea class="full-input" id="additonal-thoughts" name="additional-thoughts">additional thoughts</textarea>
+  <!--submit button-->
+  <input id="submit" type="submit">
+</form>
+<!--disclaimer about background image-->
+<p id="disclaimer">This background image is from the <a href="https://lasers.llnl.gov/media/photo-gallery">National Ignition Facility</a> image and the author is Lawrence Livermore National Laboratory. This web page is not affiliated with or endorsed by the aformention party. This web page is for educational and demonstration purposes only.</p>
+</body>
+</html>

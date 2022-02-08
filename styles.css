@@ -1,0 +1,72 @@
+/*set some styles for the entire page*/
+html {
+    font-size: 10px;
+  }
+  /*set styles on the body of the page*/
+  body {
+    font-size: 1.6rem;
+    background-image: linear-gradient(45deg, rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url("nif.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+    font-family: sans-serif;
+  }
+  /*set styles on top level heading*/
+  h1 {
+    text-shadow: 0.25rem 0.25rem 0.25rem black;
+    text-align: center;
+  }
+  /*set styles on description of survey*/
+  #description, #disclaimer {
+    text-shadow: 0.1rem 0.1rem 0.1rem black;
+    width: 90%;
+    margin: 1rem auto;
+  }
+  /*style links*/
+  a {
+    color: white;
+  }
+  /*set styles on form*/
+  form {
+    background: rgba(0,0,0,0.75);
+    width: 90%;
+    margin: 0 auto;
+    padding: 1rem 0;
+  }
+  /*style some labels and descriptions in the form*/
+  .main-label {
+    display: block;
+    width: 90%;
+    margin: 0 auto;
+    padding: 1rem 0;
+  }
+  /*style some inputs in the form*/
+  .full-input {
+    display: block;
+    box-sizing: border-box;
+    width: 90%;
+    margin: 1rem auto;
+    border: none;
+    padding: 0.5rem;
+  }
+  /*style the addditonal thoughts section*/
+  textarea {
+    height: 9.6rem;
+  }
+  /*style the submit button*/
+  #submit {
+    display: block;
+    box-sizing: border-box;
+    width: 90%;
+    margin: 2rem auto 1rem auto;
+    border: none;
+    padding: 0.5rem;
+  }
+  /*for bigger screens*/
+  @media screen and (min-width: 600px) {
+    /*make sure the content doesn't stretch too big on bigger screens*/
+    form, #description, #disclaimer {
+      max-width: 800px;
+    }
+  }
+  
